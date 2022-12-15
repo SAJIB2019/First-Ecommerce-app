@@ -35,6 +35,9 @@ const Container = styled.div`
   &:hover ${Info} {
     opacity: 1;
   }
+  @media screen and (max-width: 768px) {
+    min-width: 340px;
+  }
 `;
 
 const Circle = styled.div`

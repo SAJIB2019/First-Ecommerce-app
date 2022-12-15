@@ -10,15 +10,26 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    height: 50vh;
+    width: 100%;
+  }
 `;
 const Title = styled.h1`
   font-size: 70px;
   margin-bottom: 25px;
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 const Desc = styled.div`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    font-weight: 500;
+  }
 `;
 const InputContainer = styled.div`
   width: 50%;

@@ -9,24 +9,38 @@ import EmailOutlined from "@mui/icons-material/EmailOutlined";
 import Image15 from "../images/payment.png";
 const Container = styled.div`
   display: flex;
-  @media screen and (max-width: 600px) {
-    display: grid;
-
-    grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
   }
 `;
 
 const Left = styled.div`
   flex: 1;
-  display: flex;
   flex-direction: column;
-  padding: 20px;
+  align-items: center;
+  padding: 0 20px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+  text-transform: uppercase;
+`;
 
 const Desc = styled.p`
   margin: 20px 0px;
+  text-align: justify;
+  @media screen and (max-width: 768px) {
+    margin: 12px 0;
+    text-align: justify;
+  }
 `;
 
 const SocialContainer = styled.div`
@@ -47,7 +61,12 @@ const SocialIcon = styled.div`
 
 const Center = styled.div`
   flex: 1;
-  padding: 20px;
+  padding: 0 20px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h1`
@@ -67,7 +86,12 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
-  padding: 20px;
+  padding: 0 20px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ContactItem = styled.div`
@@ -83,7 +107,7 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>Florina.</Logo>
         <Desc>
           There are many variations of passage of lorem Ipsum available, but the
           majority have suffered alteration in some form, by injected humor, or
